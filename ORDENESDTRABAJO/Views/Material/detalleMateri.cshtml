@@ -1,0 +1,31 @@
+﻿@model ENTIDAD.MATERIALES
+
+@{
+    ViewBag.Title = "detalleMateri";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de los materiales y Herramientas</h2>
+
+<div> 
+    <hr />
+    <h4>MATERIALES</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            <label>Numero Identificador</label>    
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ID_MATERIAL)
+        </dd>
+        <dt>
+            <label>Material / Herramienta</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.METERIAL)
+        </dd>
+    </dl>
+</div>
+<p>   
+  <a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("editar","Material",new {id = Model.ID_MATERIAL})"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+  <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Material")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+</p>

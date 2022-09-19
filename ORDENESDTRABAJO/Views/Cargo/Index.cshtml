@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ENTIDAD.CARGO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Cargos</h2>
+
+<p> 
+    <a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Cargo")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr/>
+<table class="display" id="tablaid" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                <label> Numero Identificador </label>
+            </th>
+            <th>
+                <label> Cargo </label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_CARGO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CARGO1)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Cargo",new {id=item.ID_CARGO})">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("cargodetalle","Cargo",new {id=item.ID_CARGO})">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                    </a>
+                    <a class="btn btn-danger btn-xs" style="border-bottom:double" onclick="EliminarC(@item.ID_CARGO)" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+ 
+</table>
+
+@section scripts {   
+  
+    <script>
+        $('#tablaid').DataTable();
+       
+        function EliminarC(idcargo)
+        {
+            $.confirm({
+                title: 'Eliminar!',
+                content: '¿ESTAS SEGURO DE ELIMINAR ESTE CARGO?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#tablaid");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            url: "/Cargo/elimina",
+                            type: "post",
+                            data: {id: idcargo}
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#tablaid");
+
+                            if (response.ok) {
+                                alert("Cargo Eliminado");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#tablaid")
+                            alert(textStatus);
+                        });
+                      
+                    },
+                    cancelar: function () {
+                     
+                    },
+                  
+                }
+            });
+
+        }
+    </script>
+    }

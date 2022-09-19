@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6fbc00815ee3425ea838c67dcdc41d33" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.TIPOSERVICIO" Width="1.5" PointX="13.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.USUARIO" Width="1.5" PointX="5.375" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.DEPARTAMENTO" Width="1.5" PointX="6.875" PointY="6.125" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.CARGO" Width="1.5" PointX="7.375" PointY="8.375" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.EMPLEADO" Width="1.5" PointX="9.875" PointY="6.25" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__EMPLEADO__ID_CAR__44CA3770" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__EMPLEADO__ID_DEP__45BE5BA9" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.SOLIORDEN" Width="1.5" PointX="10.875" PointY="1.125" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__SOLIORDEN__ID_DE__73852659" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__SOLIORDEN__ID_EM__4B7734FF" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__SOLIORDEN__ID_CA__4C6B5938" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.TRABAJOSREALIZADOS" Width="1.5" PointX="16" PointY="2.625" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__TRABAJOSR__ID_CA__1B9317B3" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.MANTENIMIENTO" Width="1.5" PointX="15.5" PointY="5.875" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.ORDENTRABAJO" Width="1.5" PointX="12.875" PointY="5.625" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__ORDENTRAB__ID_EM__477199F1" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__ORDENTRAB__ID_MA__4959E263" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK__ORDENTRAB__ID_SO__4865BE2A" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.MATERIALES" Width="1.5" PointX="18.125" PointY="1" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.DETALLEORDEN" Width="1.5" PointX="18.5" PointY="4.25" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK_DETALLEORDEN_MATERIALES" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK_DETALLEORDEN_ORDENTRABAJO" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.FK_DETALLEORDEN_TRABAJOSREALIZADOS" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.AspNetRoles" Width="1.5" PointX="4.125" PointY="5.25" />
+        <EntityTypeShape EntityType="BSORDENTRABAJOModel.AspNetUsers" Width="1.5" PointX="0.75" PointY="4" />
+        <AssociationConnector Association="BSORDENTRABAJOModel.AspNetUserRoles" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

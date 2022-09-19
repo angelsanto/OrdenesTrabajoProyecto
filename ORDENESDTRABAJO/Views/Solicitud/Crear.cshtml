@@ -1,0 +1,210 @@
+﻿@model ENTIDAD.SOLIORDEN
+
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear</h2>
+
+<form action="@Url.Action("Crear","Solicitud")" method="post" id="frmsoli">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">        
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_SOLIORDEN)
+        <div class="form-group">
+            <h4>SOLICITUD PARA ORDEN DE TRABAJO</h4>
+          
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">DESCRIPCION DEL TRABAJO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                @Html.EditorFor(model => model.DESCRIPCION, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DESCRIPCION, "", new { @class = "text-danger" })
+            </div>
+        </div>
+     
+        <div class="form-group">
+            <label class="control-label col-md-2">FECHA Y HORA</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input type="datetime-local" class="form-control" id="FECHASOLI" name="FECHASOLI" @*value="2022-06-01T08.00"*@ />
+                @Html.ValidationMessageFor(model => model.FECHASOLI, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">EMPLEADO SOLCITA</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_EMPLE" name="ID_EMPLE">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_EMPLE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">TIPO DE SERVICIO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_CATEGORIA" name="ID_CATEGORIA">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_CATEGORIA, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">DEPARTAMENTO QUE SOLICITA</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_DEPARTA" name="ID_DEPARTA">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_DEPARTA, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    
+</form>
+    <div>   
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Solicitud")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+
+        @Scripts.Render("~/bundles/jqueryval")
+     
+         <script>
+
+            getDataC();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE TIPO SERVICIO
+            function getDataC() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Tiposervi/getcategoria',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_CATEGORIA").append('<option value=' + item.ID_CATEGORIA + '>' + item.CATEGORIA + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+
+            getDataD();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE DEPARATMENTO
+            function getDataD() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Departamento/getdeparta',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_DEPARTA").append('<option value=' + item.ID_DEPARTA + '>' + item.DEPARTAMENTO1 + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            getemple();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE EMPLEADO
+            function getemple() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Empleado/getemple',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_EMPLE").append('<option value=' + item.ID_EMPLE + '>' + item.nombreCompleto + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            
+            $("#frmsoli").submit(function (event) {
+                event.preventDefault();
+
+                //CONDICIONALES
+                var dsc = $("#DESCRIPCION").val();
+                var fecha = $("#FECHASOLI").val();
+                var emple = $("#ID_EMPLE").val();
+                var cbc = $("#ID_CATEGORIA").val();
+                var cbd = $("#ID_DEPARTA").val();
+               
+
+                if (dsc == "") {
+                    alert("Debe de ingresar la descripcion");
+                    return;
+                }
+
+                if (fecha == "") {
+                    alert("Debe de ingresar la fecha");
+                    return;
+                }
+
+                if (emple == "") {
+                    alert("Debe de seleccionar el empleado");
+                    return;
+                }
+
+                if (cbc == "") {
+                    alert("Debe de seleccionar la categoria");
+                    return;
+                }
+
+                if (cbd == "") {
+                    alert("Debe de seleccionar el departamento");
+                    return;
+                }
+
+            var post_url = $(this).attr("action");
+            var request_method = $(this).attr("method");
+            var form_data = $(this).serializeArray();
+            console.log(form_data);
+
+            LoadingOverlayShow("#frmsoli");
+
+            $.ajax({//AQUI EMPIEZA A CREAR
+                url: post_url,
+                type: request_method,
+                data: form_data
+            }).done(function (response) {
+                console.log(response);
+
+                LoadingOverlayHide("#frmsoli");
+
+                if (response.ok) {
+                    alert("Solicitud creada con Exito");
+                    window.location = response.toRedirect;
+                }
+                else {
+                    alert(response.msg);
+                }
+
+
+            }).fail(function (jqxHR, textStatus, errorThrowm) {
+                LoadingOverlayHide("#frmsoli")
+            });
+            });
+        </script>
+    }

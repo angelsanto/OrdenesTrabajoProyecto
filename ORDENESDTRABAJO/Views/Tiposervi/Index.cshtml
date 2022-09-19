@@ -1,0 +1,103 @@
+﻿@model IEnumerable<ENTIDAD.TIPOSERVICIO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tipos de categorias de los servicios</h2>
+
+<p>
+    <a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Tiposervi")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr />
+<table class="display" id="tablaidT" style="width:100%">
+
+    <thead>
+        <tr>
+            <th>
+                <label>Numero Identificador</label>  
+            </th>
+            <th>
+                <label>Categorias o servicios de trabajos</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_CATEGORIA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CATEGORIA)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Tiposervi",new {id=item.ID_CATEGORIA})">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detalleservicio","Tiposervi",new {id=item.ID_CATEGORIA})">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                    </a>
+                    <a class="btn btn-danger btn-xs" onclick="eliminaT(@item.ID_CATEGORIA)" style="border-bottom:double" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+@section scripts{
+    
+ <script>
+     $('#tablaidT').DataTable();
+
+
+     function eliminaT(idtipo) {
+         $.confirm({
+             title: 'Eliminar!',
+             content: '¿ESTAS SEGURO DE ELIMINAR ESTE SERVICIO?',
+             buttons: {
+                 confirmar: function () {
+                     LoadingOverlayShow("#tablaidT");//PARA LLAMAR LA FUNCION LOADING
+                     $.ajax({
+                         url: "/Tiposervi/elimina",
+                         type: "post",
+                         data: { id: idtipo }
+                     }).done(function (response) {
+                         console.log(response);
+                         LoadingOverlayHide("#tablaidT");
+
+                         if (response.ok) {
+                             alert("Servicio Eliminado");
+                             window.location = response.toRedirect;
+                         }
+                         else {
+                             alert(response.msg);
+                         }
+
+
+                     }).fail(function (jqxHR, textStatus, errorThrowm) {
+                         LoadingOverlayHide("#tablaidT")
+                         alert(textStatus);
+                     });
+
+                 },
+                 cancelar: function () {
+                     
+                 },
+             
+             }
+         });
+     }
+
+
+</script>
+    
+ }
+

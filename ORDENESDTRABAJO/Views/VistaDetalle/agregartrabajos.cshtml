@@ -1,0 +1,302 @@
+﻿
+@{
+    ViewBag.Title = "agregartrabajos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AGREGAR TRABAJOS A LA ORDEN</h2>
+
+<hr />
+
+<h4>DETALLE ORDEN DE TRABAJO</h4>
+
+<div class="form-group" id="frmdetalle">
+
+<div class="form-group">
+    <label class="control-label col-md-1">ORDEN</label>
+    <div class="input-group col-md-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+        <select class="form-control" id="ID_ORDEN" name="ID_ORDEN">
+            <option value="">SELECIONE....</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label col-md-2">TIPO SERVICIO</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>  
+        <select class="form-control" id="ID_CATEGORIA" name="ID_CATEGORIA">
+            <option value="">SELECIONE....</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-1">TRABAJOS</label>
+    <div class="input-group col-md-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+        <select class="form-control" id="ID_TRABAJO" name="ID_TRABAJO">
+            <option value="">SELECIONE....</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-2">MATERIAL</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+        <select class="form-control" id="ID_MATERIAL" name="ID_MATERIAL">
+            <option value="">SELECIONE....</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="form-group"> 
+    <label class="control-label col-md-1">CANTIDAD MATERIALES</label> 
+    <div class="col-md-1">      
+        <input type="number" class="form-control" id="CANTIDAD" name="CANTIDAD" oninput="this.value = this.value.replace(/[^0-9]/g,'')"/>
+    </div>
+</div>
+
+<div class="form-group">
+        <div class="input-group col-md-4">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <input type="text" class="form-control" id="OBSERVACION" name="OBSERVACION" placeholder="OBSERVACION"/>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-8">
+            <button type="submit" class="btn btn-success"id="btnagregar"><i class="glyphicon glyphicon-plus"></i> Agregar a lista</button>
+        </div>
+    </div>
+
+    </div>
+
+<table class="table table-bordered" id="tbDetalle">
+    <thead>
+        <tr> 
+            <th scope="col">ORDEN</th>
+            <th scope="col">TRABAJOS</th>
+            <th scope="col">MATERIAL</th>
+            <th scope="col">CANTIDAD</th>
+            <th scope="col">OBSERVACION</th>
+           
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+       
+    </tbody>
+
+</table>
+
+<div class="form-group">
+    <div class="col-md-12">    
+        <button id="saveOrder" type="submit" class="btn btn-success"><i class="glyphicon glyphicon-floppy-saved"></i> Guardar</button>
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Home")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+</div>
+
+@section Scripts {
+    
+    <script>
+
+
+        getorden();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE ORDEN
+        function getorden() {
+            $.ajax({
+                Type: "GET",
+                url: '/Orden/getorden',
+                dataType: "json",
+                success: function (result) {
+                    $.each(result.data, function (key, item) {
+                        $("#ID_ORDEN").append('<option value=' + item.ID_ORDEN + '>' + item.ID_ORDEN + '</option>');
+                    });
+                },
+                erro: function (data) {
+                    alert("error");
+                }
+            });
+        }
+
+
+        //PARA QUE ME HAGA LA CASCADA
+        $(document).ready(function () {
+            $("#ID_CATEGORIA").change(function () {
+                $.get("/Trabajos/gettrabajo", { ID_CATEGO: $("#ID_CATEGORIA").val() }, function (result) {
+                    $("#ID_TRABAJO").empty();
+                    $.each(result.data, function (Index, row) {
+                        $("#ID_TRABAJO").append("<option value='" + row.ID_TRABAJO + "'>" + row.TRABAJOS + "</option>")
+                    });
+                });
+            })
+        });
+
+
+        getDataC();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE CATEGORIA
+        function getDataC() {
+            $.ajax({
+                Type: "GET",
+                url: '/Tiposervi/getcategoria',
+                dataType: "json",
+                success: function (result) {
+                    $.each(result.data, function (key, item) {
+                        $("#ID_CATEGORIA").append('<option value=' + item.ID_CATEGORIA + '>' + item.CATEGORIA + '</option>');
+                    });
+                },
+                erro: function (data) {
+                    alert("error");
+                }
+            });
+        }
+
+
+        getmater();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE MATERIAL
+        function getmater() {
+            $.ajax({
+                Type: "GET",
+                url: '/Material/getmater',
+                dataType: "json",
+                success: function (result) {
+                    $.each(result.data, function (key, item) {
+                        $("#ID_MATERIAL").append('<option value=' + item.ID_MATERIAL + '>' + item.METERIAL + '</option>');
+                    });
+                },
+                erro: function (data) {
+                    alert("error");
+                }
+            });
+        }
+
+        //PARA AGREGAR A LA TABLA.
+        $("#btnagregar").on("click", function () {
+            var orden = $("#ID_ORDEN option:selected");
+            var trabajo = $("#ID_TRABAJO option:selected");
+            var trabajoID = $("#ID_TRABAJO option:selected");
+            var materialID = $("#ID_MATERIAL option:selected");
+            var material = $("#ID_MATERIAL option:selected");
+
+            $("#tbDetalle tbody").append(
+                $("<tr>").append(
+                $("<td>").text($(orden).val()),
+                $("<td hidden>").text($(trabajoID).val()),
+                $("<td>").text($(trabajo).text()),
+                $("<td hidden>").text($(materialID).val()),
+                $("<td>").text($(material).text()),
+                $("<td>").text($("#CANTIDAD").val()),
+                $("<td>").text($("#OBSERVACION").val()),
+                '</td><td><button class="btn btn-danger"><a data-itemId="0" href="#" class="deleteItem">Remover</a></button></td></tr>'
+           
+                )
+                )
+        })
+
+
+        //PARA REMOVER DE LA TABLA
+        $(document).on('click', 'a.deleteItem', function (e) {
+            e.preventDefault();
+            var $self = $(this);
+            if ($(this).attr('data-itemId') == "0") {
+                $(this).parents('tr').css("background-color", "#ff6347").fadeOut(800, function () {
+                    $(this).remove();
+                });
+            }
+        });
+
+        //PARA GUARDAR EN TABLA DETALLE
+        function saveOrder(data) {
+
+            var cbo = $("#ID_ORDEN").val();
+            var cbt = $("#ID_TRABAJO").val();
+            var cbm = $("#ID_MATERIAL").val();
+          
+
+            if (cbo == "") {
+                alert("Debe de seleccionar la Orden");
+                return;
+            }
+
+            if (cbt == "") {
+                alert("Debe de seleccionar el Trabajo");
+                return;
+            }
+
+            if (cbm == "") {
+                alert("Debe de seleccionar el Material");
+                return;
+            }
+
+            $.confirm({
+                title: 'Guardar!',
+                content: '¿ESTAS SEGURO DE GUARDAR ESTA INFORMACION?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#frmdetalle");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            contentType: 'application/json; charset=utf-8',
+                            dataType: 'json',
+                            type: 'POST',
+                            url: "/VistaDetalle/CrearDetalle",
+                            data: data,
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#frmdetalle");
+
+                            if (response.ok) {
+                                alert("Detalle Guardado");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#frmdetalle")
+                            alert(textStatus);
+                        });
+
+                    },
+                    cancelar: function () {
+
+                    },
+
+                }
+            });
+        }
+
+        $("#saveOrder").click(function (e) {
+            e.preventDefault();
+
+            var orderArr = [];
+            orderArr.length = 0;
+
+            $.each($("#tbDetalle tbody tr"), function () {
+                orderArr.push({
+                    ID_ORDEN: $(this).find('td:eq(0)').html(),
+                    ID_TRABAJO: $(this).find('td:eq(1)').html(),
+                    ID_MATERIAL: $(this).find('td:eq(3)').html(),
+                    CANTIDAD: $(this).find('td:eq(5)').html(),
+                    OBSERVACION: $(this).find('td:eq(6)').html()
+                });
+            });
+
+            var data = JSON.stringify({
+                detalle: orderArr
+            });
+
+            $.when(saveOrder(data)).then(function (response) {
+                console.log(response);
+            }).fail(function (err) {
+                console.log(err);
+            });
+        });
+</script>
+}
+   
+

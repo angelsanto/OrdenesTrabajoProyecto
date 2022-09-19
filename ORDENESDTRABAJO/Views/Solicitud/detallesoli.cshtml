@@ -1,0 +1,66 @@
+﻿@model ENTIDAD.solicitudCE
+
+@{
+    ViewBag.Title = "detallesoli";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de la solicitud</h2>
+
+<div>
+    <hr />
+    <h4>SOLICITUD</h4>
+    <dl class="dl-horizontal">
+        <dt>   
+            <label>Numero Identificador</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_SOLIORDEN)
+        </dd>
+
+        <dt>
+            <label>Descripcion</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            <label>Fecha de la solicitud</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHASOLI)
+        </dd>
+
+        <dt>
+            <label>Empleado que solicita</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreCompleto)
+        </dd>
+
+        <dt>
+            <label>Categoria o servicio</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORIA)
+        </dd>
+
+        <dt>
+            <label>Departamento</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEPARTAMENTO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Solicitud")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+</p>

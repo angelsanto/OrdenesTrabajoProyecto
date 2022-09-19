@@ -1,0 +1,188 @@
+﻿@model ENTIDAD.EMPLEADO
+
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear</h2>
+
+<form action="@Url.Action("Crear","Empleado")" method="post" id="frmemple">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_EMPLE)
+        <div class="form-group">
+            <h4>EMPLEADO</h4>
+          
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">DNI o Codigo</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="DNI" name="DNI" placeholder="NUMERO IDENTIDAD" />
+                @Html.ValidationMessageFor(model => model.DNI, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">NOMBRE</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="NON" name="NON" placeholder="NOMBRE EMPLEADO" />
+                @Html.ValidationMessageFor(model => model.NON, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">APELLIDO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="APELLIDO" name="APELLIDO" placeholder="APELLIDO EMPLEADO" />
+                @Html.ValidationMessageFor(model => model.APELLIDO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">CARGO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_CARGO" name="ID_CARGO">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_CARGO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">DEPARTAMENTO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_DEPARTA" name="ID_DEPARTA">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_DEPARTA, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    
+    </form> 
+
+    <div>   
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Empleado")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script>
+            getData();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE CARGO
+            function getData() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Cargo/getcargos',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_CARGO").append('<option value=' + item.ID_CARGO + '>' + item.CARGO1 + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            getDataD();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE DEPARATMENTO
+            function getDataD() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Departamento/getdeparta',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_DEPARTA").append('<option value=' + item.ID_DEPARTA + '>' + item.DEPARTAMENTO1 + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            $("#frmemple").submit(function (event) {
+                event.preventDefault();
+                //CONDICIONALES
+                var dni = $("#DNI").val();
+                var nom = $("#NON").val();
+                var ape = $("#APELLIDO").val();
+                var cbc = $("#ID_CARGO").val();
+                var cbd = $("#ID_DEPARTA").val();
+                
+
+                if (dni == "") {
+                    alert("Debe de ingresar el codigo o identidad");
+                    return;
+                }
+
+                if (nom == "") {
+                    alert("Debe de ingresar el Nombre");
+                    return;
+                }
+
+                if (ape == "") {
+                    alert("Debe de ingresar el Apellido");
+                    return;
+                }
+
+                if (cbc == ""){
+                    alert("Debe de Seleccionar el cargo");
+                    return;
+                }
+
+                if (cbd == "") {
+                    alert("Debe de Seleccionar el Departamento");
+                    return;
+                }
+          
+                var post_url = $(this).attr("action");
+                var request_method = $(this).attr("method");
+                var form_data = $(this).serializeArray();
+                console.log(form_data);
+
+                LoadingOverlayShow("#frmemple");
+
+                $.ajax({//AQUI EMPIEZA A CREAR
+                    url: post_url,
+                    type: request_method,
+                    data: form_data
+                }).done(function (response) {
+                    console.log(response);
+
+                    LoadingOverlayHide("#frmemple");
+
+                    if (response.ok) {
+                        alert("Empleado creado con Exito");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+
+
+                }).fail(function (jqxHR, textStatus, errorThrowm) {
+                    LoadingOverlayHide("#frmemple")
+                });
+            });
+
+        </script>
+    }

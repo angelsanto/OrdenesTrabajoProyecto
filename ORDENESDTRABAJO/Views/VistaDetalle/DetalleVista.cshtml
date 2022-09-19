@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ENTIDAD.ordenCE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ordenes Detalle</h2>
+<p>
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("detalle","VistaDetalle")"><i class="glyphicon glyphicon-trash"></i> Eliminar detalle</a>
+</p>
+
+<hr />
+<table class="display" id="tablaidOR" style="width:100%">
+
+    <thead>
+        <tr>
+            <th>Identificador Orden</th>
+            <th>Fecha y hora de inicio</th>
+            <th>Fecha y hora de finalizacion</th>
+            <th>Empleado de manteniminto</th>
+            <th>Tipo Mantenimiento</th>
+            <th>Solicitud orden</th>
+            <th>Mostrar</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID_ORDEN</td>
+                <td>@item.FECHAINICIO</td>
+                <td>@item.FECHAFINAL</td>
+                <td>@item.nombreCompleto</td>
+                <td>@item.mantenimiento</td>
+                <td>@item.ID_SOLIORDEN</td>
+                <td><button class="btn btn-default">@Ajax.ActionLink("Selecciona", "parcialvista" , "VistaDetalle" , new {id=item.ID_ORDEN },new AjaxOptions { HttpMethod="GET" ,InsertionMode=InsertionMode.Replace,UpdateTargetId ="detalle" })</button></td>
+                <td></td>
+                
+            </tr>
+        }
+    </tbody>
+
+</table>
+<p>
+    <h4>Detalle ordenes</h4> 
+</p>
+<div id="detalle"></div>
+
+
+@section scripts{
+
+    <script>
+        $('#tablaidOR').DataTable();     
+</script>
+}

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<ENTIDAD.solicitudCE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Solicitudes sin trabajar</h2>
+
+<p>
+    <a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Solicitud")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+    <hr />
+    <table class="display" id="tablaids" style="width:100%">
+
+        <thead>
+            <tr>
+                <th>
+                    <label> Numero Identificador </label>
+                </th>
+                <th>
+                    <label> Descripcion o asunto </label>
+                </th>
+                <th>
+                    <label> Fecha de la solicitud </label>
+                </th>
+                <th>
+                    <label> Empleado que solicita </label>
+                </th>
+                <th>
+                    <label> Categoria o servicio </label>
+                </th>
+                <th>
+                    <label> Departamento que solicita </label>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_SOLIORDEN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FECHASOLI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombreCompleto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CATEGORIA)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DEPARTAMENTO)
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detallesoli", "Solicitud",new {id=item.ID_SOLIORDEN})">
+                            <i class="glyphicon glyphicon-eye-open"></i>
+                        </a>
+                        <a class="btn btn-danger btn-xs" onclick="EliminarS(@item.ID_SOLIORDEN)" style="border-bottom:double" title="Eliminar">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <h4>Vista solicitudes</h4>
+            <a class="btn btn-info" style="border-bottom:double" href="@Url.Action("Lista","Solicitud")"><i class="glyphicon glyphicon-eye-open"></i> Solicitudes</a>
+    </div>
+</div>
+
+@section scripts{
+
+    <script>
+        $('#tablaids').DataTable();
+
+        function EliminarS(idsoli) {
+            $.confirm({
+                title: 'Eliminar!',
+                content: '¿ESTAS SEGURO DE ELIMINAR ESTA SOLICITUD?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#tablaids");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            url: "/Solicitud/elimina",
+                            type: "post",
+                            data: { id: idsoli }
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#tablaids");
+
+                            if (response.ok) {
+                                alert("Solicitud Eliminada");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#tablaids")
+                            alert(textStatus);
+                        });
+
+                    },
+                    cancelar: function () {
+
+                    },
+
+                }
+            });
+        }
+
+    </script>
+
+}

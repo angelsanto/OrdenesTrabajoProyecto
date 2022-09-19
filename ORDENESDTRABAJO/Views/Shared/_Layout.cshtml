@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SISTEMA PARA GERENERAR ORDENES DE TRABAJO</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    @RenderSection("styles", required: false)
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Ordenes De Trabajo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Tablas Catalogo <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="#">@Html.ActionLink("Cargo", "Index", "Cargo")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Departamento", "Index", "Departamento")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Tipo Servicio", "Index", "Tiposervi")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Trabajos", "Index", "Trabajos")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Empleado", "Index", "Empleado")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Materiales/Herramientas", "Index", "Material")</a></li>
+                            
+                        </ul>
+                    </li>
+                    }
+                   
+                    <li>@Html.ActionLink("Solicitud para Orden", "Index", "Solicitud")</li>   
+
+                   @if (Request.IsAuthenticated && User.IsInRole("EmpleadoM"))
+                   {
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Ordenes de Trabajos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">@Html.ActionLink("Orden Trabajo", "Index", "Orden")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Agregar Trabajos a Orden", "agregartrabajos", "VistaDetalle")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("Vista de ordenes detalles", "DetalleVista", "VistaDetalle")</a></li>
+                        </ul>
+                    </li>
+                    }
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Reportes <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">@Html.ActionLink("RPT Solicitud", "Rptsolicitud", "Solicitud")</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">@Html.ActionLink("RPT Orden", "Rptorden", "VistaDetalle")</a></li>
+                        </ul>
+                    </li>
+
+                  
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                  
+                </ul>
+                        @Html.Partial("_LoginPartial")
+</div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Mi aplicación Ordenes trabajo versìon 1.9 ASP.NET Developer: ANGEL SANTOS VALDEZ</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+        <script src="~/Scripts/app.js"></script>
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>

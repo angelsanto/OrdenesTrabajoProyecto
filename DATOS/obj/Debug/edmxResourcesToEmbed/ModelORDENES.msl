@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BSORDENTRABAJOModelStoreContainer" CdmEntityContainer="BSORDENTRABAJOEntities">
+    <EntitySetMapping Name="TIPOSERVICIO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.TIPOSERVICIO">
+        <MappingFragment StoreEntitySet="TIPOSERVICIO">
+          <ScalarProperty Name="ID_CATEGORIA" ColumnName="ID_CATEGORIA" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="ID_USU" ColumnName="ID_USU" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="NON_USU" ColumnName="NON_USU" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTAMENTO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.DEPARTAMENTO">
+        <MappingFragment StoreEntitySet="DEPARTAMENTO">
+          <ScalarProperty Name="DEPARTAMENTO1" ColumnName="DEPARTAMENTO" />
+          <ScalarProperty Name="ID_DEPARTA" ColumnName="ID_DEPARTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARGO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.CARGO">
+        <MappingFragment StoreEntitySet="CARGO">
+          <ScalarProperty Name="CARGO1" ColumnName="CARGO" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="ID_DEPARTA" ColumnName="ID_DEPARTA" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="APELLIDO" ColumnName="APELLIDO" />
+          <ScalarProperty Name="NON" ColumnName="NON" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="ID_EMPLE" ColumnName="ID_EMPLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOLIORDEN">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.SOLIORDEN">
+        <MappingFragment StoreEntitySet="SOLIORDEN">
+          <ScalarProperty Name="ID_DEPARTA" ColumnName="ID_DEPARTA" />
+          <ScalarProperty Name="ID_CATEGORIA" ColumnName="ID_CATEGORIA" />
+          <ScalarProperty Name="ID_EMPLE" ColumnName="ID_EMPLE" />
+          <ScalarProperty Name="FECHASOLI" ColumnName="FECHASOLI" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_SOLIORDEN" ColumnName="ID_SOLIORDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRABAJOSREALIZADOS">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.TRABAJOSREALIZADOS">
+        <MappingFragment StoreEntitySet="TRABAJOSREALIZADOS">
+          <ScalarProperty Name="ID_CATEGORIA" ColumnName="ID_CATEGORIA" />
+          <ScalarProperty Name="TRABAJOS" ColumnName="TRABAJOS" />
+          <ScalarProperty Name="ID_TRABAJO" ColumnName="ID_TRABAJO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MANTENIMIENTO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.MANTENIMIENTO">
+        <MappingFragment StoreEntitySet="MANTENIMIENTO">
+          <ScalarProperty Name="MANTENIMIENTO1" ColumnName="MANTENIMIENTO" />
+          <ScalarProperty Name="ID_MANTENI" ColumnName="ID_MANTENI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDENTRABAJO">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.ORDENTRABAJO">
+        <MappingFragment StoreEntitySet="ORDENTRABAJO">
+          <ScalarProperty Name="ID_SOLIORDEN" ColumnName="ID_SOLIORDEN" />
+          <ScalarProperty Name="ID_MANTENI" ColumnName="ID_MANTENI" />
+          <ScalarProperty Name="ID_EMPLE" ColumnName="ID_EMPLE" />
+          <ScalarProperty Name="FECHAFINAL" ColumnName="FECHAFINAL" />
+          <ScalarProperty Name="FECHAINICIO" ColumnName="FECHAINICIO" />
+          <ScalarProperty Name="ID_ORDEN" ColumnName="ID_ORDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATERIALES">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.MATERIALES">
+        <MappingFragment StoreEntitySet="MATERIALES">
+          <ScalarProperty Name="METERIAL" ColumnName="METERIAL" />
+          <ScalarProperty Name="ID_MATERIAL" ColumnName="ID_MATERIAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLEORDEN">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.DETALLEORDEN">
+        <MappingFragment StoreEntitySet="DETALLEORDEN">
+          <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="ID_MATERIAL" ColumnName="ID_MATERIAL" />
+          <ScalarProperty Name="ID_TRABAJO" ColumnName="ID_TRABAJO" />
+          <ScalarProperty Name="ID_ORDEN" ColumnName="ID_ORDEN" />
+          <ScalarProperty Name="ID_DETALLE" ColumnName="ID_DETALLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="BSORDENTRABAJOModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="BSORDENTRABAJOModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

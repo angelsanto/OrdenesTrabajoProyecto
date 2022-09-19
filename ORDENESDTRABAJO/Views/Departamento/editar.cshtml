@@ -1,0 +1,84 @@
+﻿@model ENTIDAD.DEPARTAMENTO
+
+@{
+    ViewBag.Title = "Editar Departamento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Editar Departamento</h2>
+
+<form action="@Url.Action("editar","Departamento")" method="post" id="frmdepa">
+
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        <h4>DEPARTAMENTO</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_DEPARTA)
+        <div class="form-group">
+          
+        </div>
+
+        <div class="form-group">           
+            <label class="control-label col-md-2">DEPARTAMENTO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="DEPARTAMENTO1" name="DEPARTAMENTO1" value="@Model.DEPARTAMENTO1" />
+                @Html.ValidationMessageFor(model => model.DEPARTAMENTO1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success"/>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div>
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Departamento")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+
+<script>
+
+   $("#frmdepa").submit(function (event) {
+                event.preventDefault();
+
+                var post_url = $(this).attr("action");
+                var request_method = $(this).attr("method");
+                var form_data = $(this).serializeArray();
+                console.log(form_data);
+
+                LoadingOverlayShow("#frmdepa");
+
+                $.ajax({//AQUI EMPIEZA A CREAR
+                    url: post_url,
+                    type: request_method,
+                    data: form_data
+                }).done(function (response) {
+                    console.log(response);
+
+                    LoadingOverlayHide("#frmdepa");
+
+                    if (response.ok) {
+                        alert("Departamento Editado con Exito");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+
+
+                }).fail(function (jqxHR, textStatus, errorThrowm) {
+                    LoadingOverlayHide("#frmdepa")
+                });
+            });
+
+</script>
+    }

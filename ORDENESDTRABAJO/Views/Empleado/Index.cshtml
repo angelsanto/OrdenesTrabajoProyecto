@@ -1,0 +1,120 @@
+﻿@model IEnumerable<ENTIDAD.empleadoCE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Empleados</h2>
+
+<p>
+    <a class="btn btn-success" style="border-bottom:double"  href="@Url.Action("Crear","Empleado")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr/>
+<table class="display" id="tablaidE" style="width:100%">
+
+    <thead>
+        <tr>
+            <th>
+                <label>Numero Identificador</label>           
+            </th>
+            <th>
+                <label>DNI o Codigo</label>
+            </th>
+            <th>
+                <label>Nombre Empleado</label>
+            </th>
+            <th>
+                <label>Cargo</label>
+            </th>
+            <th>
+                <label>Departamento</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_EMPLE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DNI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreCompleto)  
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.CARGO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DEPARTAMENTO)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Empleado",new {id=item.ID_EMPLE})">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detallemple","Empleado",new {id=item.ID_EMPLE})">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                    </a>
+                    <a class="btn btn-danger btn-xs" onclick="eliminaE(@item.ID_EMPLE)" style="border-bottom:double" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>   
+                </td>
+            </tr>
+        }
+
+    </tbody>  
+
+</table>
+
+@* EL SCRIPTS DE LA TABLA *@
+@section scripts {
+    <script>
+        $('#tablaidE').DataTable();
+
+        function eliminaE(idemple) {
+            $.confirm({
+                title: 'Eliminar!',
+                content: '¿ESTAS SEGURO DE ELIMINAR ESTE EMPLEADO?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#tablaidE");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            url: "/Empleado/elimina",
+                            type: "post",
+                            data: { id: idemple }
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#tablaidE");
+
+                            if (response.ok) {
+                                alert("Empleado Eliminado");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#tablaidE")
+                            alert(textStatus);
+                        });
+
+                    },
+                    cancelar: function () {
+                   
+                    },
+                 
+                }
+            });
+        }
+    </script>
+
+}

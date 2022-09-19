@@ -1,0 +1,43 @@
+﻿@model ENTIDAD.trabajoCE
+
+@{
+    ViewBag.Title = "detalletrabajo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de los trabajo</h2>
+
+<div>
+    <hr />
+    <h4>TRABAJOSREALIZADOS</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            <label>NUMERO IDENTIFICADOR</label>         
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_TRABAJO)
+        </dd>
+
+        <dt>
+            <label>TRABAJOS</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRABAJOS)
+        </dd>
+
+        <dt>
+            <label>CATEGORIAS O SERVICIOS</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORIA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("editar","Trabajos",new {id = Model.ID_TRABAJO})"><i class="glyphicon glyphicon-edit"></i> Editar</a> 
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Trabajos")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+</p>

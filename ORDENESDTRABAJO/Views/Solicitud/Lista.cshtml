@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ENTIDAD.solicitudCE>
+
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista solicitudes en general</h2>
+
+<table class="display" id="tablaidsl" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+               <label>Numero Identificador</label>
+            </th>
+            <th>
+                <label> Descripcion o asunto </label>
+            </th>
+            <th>
+                <label> Fecha de la solicitud </label>
+            </th>
+            <th>
+                <label> Empleado que solicita </label>
+            </th>
+            <th>
+                <label> Categoria o servicio </label>
+            </th>
+            <th>
+                <label> Departamento que solicita </label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+   
+<tbody>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SOLIORDEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRIPCION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHASOLI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreCompleto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CATEGORIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEPARTAMENTO)
+        </td>
+        <td></td>
+    </tr>
+}
+</tbody>
+
+</table>
+
+<div>
+    <a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("Index","Solicitud")"><i class="glyphicon glyphicon-arrow-left"></i> Regresar</a>
+</div>
+
+@section scripts{
+    <script>
+        $('#tablaidsl').DataTable();
+    </script>
+    }

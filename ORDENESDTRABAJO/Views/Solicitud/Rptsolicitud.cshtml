@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Rptsolicitud";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>REPORTES</h2>
+
+<br />
+<div class="form-group">
+    <label class="control-label col-md-2">DEPARTAMENTO</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+        <select class="form-control" id="ID_DEPARTA" name="ID_DEPARTA">
+            <option value="">SELECIONE....</option>
+        </select>
+    </div>
+</div>
+
+<br />
+<button class="btn btn-primary" onclick="Descargar()">
+    <i class="glyphicon glyphicon-download"></i> Descargar Reporte
+</button>
+
+<button class="btn btn-success" onclick="Mostrar()">
+    <i class="glyphicon glyphicon-eye-open"></i> Mostrar Reporte
+</button>
+
+
+<hr />
+<iframe id="frmsolicitud" width="100%" height="550px" frameborder="0" scrolling="no"></iframe>
+
+@section scripts {
+    <script>
+
+        //getDataD();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE DEPARTAMENTO
+        //function getDataD() {
+        //    $.ajax({
+        //        Type: "GET",
+        //        url: '/Departamento/getdeparta',
+        //        dataType: "json",
+        //        success: function (result) {
+        //            $.each(result.data, function (key, item) {
+        //                $("#ID_DEPARTA").append('<option value=' + item.ID_DEPARTA + '>' + item.DEPARTAMENTO1 + '</option>');
+        //            });
+        //        },
+        //        erro: function (data) {
+        //            alert("error");
+        //        }
+        //    });
+        //}
+        //var dpto=$("#ID_DEPARTA");
+
+        function Descargar()
+        {
+            //if (dpto.val() == "") {
+            //    alert("Debe de seleccionar un departamento")
+            //    return;
+            //}
+            //window.open("/Solicitud/descargarreporteS/" + dpto.val());
+            window.open("/Solicitud/descargarreporteS");
+        }
+          
+        function Mostrar() {
+
+            //if (dpto.val() == "") {
+            //    alert("Debe de seleccionar un departamento")
+            //    return;
+            //}
+            $("#frmsolicitud")
+            //.attr("src", "/Solicitud/descargarreporteS/" + dpto.val())
+            .attr("src", "/Solicitud/descargarreporteS")
+            .load();
+        }
+
+    </script>
+    }

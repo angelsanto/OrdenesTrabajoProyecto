@@ -1,0 +1,40 @@
+﻿@model ENTIDAD.CARGO
+
+@{
+    ViewBag.Title = "eliminar Cargo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar el cargo</h2>
+
+<h3>Estas seguro de Eliminar el Registro?</h3>
+<div>
+    
+    <hr />
+    <h4>CARGO</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            <label>Numero Identificador</label>        
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ID_CARGO)
+        </dd>
+        <dt>
+            <label> Cargo </label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CARGO1)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("elimina","Cargo",FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger"/> 
+           
+            <a class="btn btn-info" href="@Url.Action("Index","Cargo")"><i class="glyphicon glyphicon-hand-left"></i>Regresar</a>
+        </div>
+    }
+</div>

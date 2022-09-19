@@ -1,0 +1,100 @@
+﻿@model IEnumerable<ENTIDAD.DEPARTAMENTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Departamento</h2>
+
+<p>    
+<a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Departamento")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr/>
+<table class="display" id="tablaidD" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                <label> Numero Identificador </label>   
+            </th>
+            <th>
+                <label> Departamento </label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_DEPARTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEPARTAMENTO1)
+        </td>
+        <td>
+
+            <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Departamento",new {id=item.ID_DEPARTA})">
+                <i class="glyphicon glyphicon-edit"></i>
+            </a>
+            <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detalledepa","Departamento",new {id=item.ID_DEPARTA})">
+                <i class="glyphicon glyphicon-eye-open"></i>
+            </a>
+            <a class="btn btn-danger btn-xs" onclick="eliminaD(@item.ID_DEPARTA)" style="border-bottom:double" title="Eliminar">
+                <i class="glyphicon glyphicon-trash"></i>
+            </a>
+           
+        </td>
+    </tr>
+}
+
+    </tbody>
+
+</table>
+@* EL SCRIPTS DE LA TABLA Y ELIMINAR*@
+@section scripts {
+    <script>
+        $('#tablaidD').DataTable();
+
+        function eliminaD(iddepa) {
+            $.confirm({
+                title: 'Eliminar!',
+                content: '¿ESTAS SEGURO DE ELIMINAR ESTE DEPARTAMENTO?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#tablaidD");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            url: "/Departamento/elimina",
+                            type: "post",
+                            data: { id: iddepa }
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#tablaidD");
+
+                            if (response.ok) {
+                                alert("Deparatamento Eliminado");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#tablaidD")
+                            alert(textStatus);
+                        });
+
+                    },
+                    cancelar: function () {
+                       
+                    },
+                   
+                }
+            });
+        }
+    </script>
+
+}

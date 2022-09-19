@@ -1,0 +1,126 @@
+﻿@model IEnumerable<ENTIDAD.ordenCE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ordenes de trabajo</h2>
+
+<p> 
+    <a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Orden")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr />
+<table class="display" id="tablaidOR" style="width:100%">
+
+    <thead>
+        <tr>
+            <th>
+                <label>Numero Identificador</label>           
+            </th>
+            <th>
+                <label>Fecha y hora de inicio</label>
+            </th>
+            <th>
+                <label>Fecha y hora de finalizacion</label>
+            </th>
+            <th>
+                <label>Empleado de manteniminto</label>
+            </th>
+            <th>
+                <label>Tipo Mantenimiento</label>
+            </th>
+            <th>
+                <label>Solicitud orden</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>  
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_ORDEN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FECHAINICIO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FECHAFINAL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mantenimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_SOLIORDEN)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Orden",new {id=item.ID_ORDEN})">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detalleorden","Orden",new {id=item.ID_ORDEN})">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                    </a>
+                    <a class="btn btn-danger btn-xs" onclick="eliminaO(@item.ID_ORDEN)" style="border-bottom:double" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+@section scripts{
+
+    <script>
+        $('#tablaidOR').DataTable();
+
+
+        function eliminaO(idorden) {
+         $.confirm({
+             title: 'Eliminar!',
+             content: '¿ESTAS SEGURO DE ELIMINAR ESTA ORDEN?',
+             buttons: {
+                 confirmar: function () {
+                     LoadingOverlayShow("#tablaidOR");//PARA LLAMAR LA FUNCION LOADING
+                     $.ajax({
+                         url: "/Orden/elimina",
+                         type: "post",
+                         data: { id: idorden }
+                     }).done(function (response) {
+                         console.log(response);
+                         LoadingOverlayHide("#tablaidOR");
+
+                         if (response.ok) {
+                             alert("Orden Eliminado");
+                             window.location = response.toRedirect;
+                         }
+                         else {
+                             alert(response.msg);
+                         }
+
+
+                     }).fail(function (jqxHR, textStatus, errorThrowm) {
+                         LoadingOverlayHide("#tablaidOR")
+                         alert(textStatus);
+                     });
+
+                 },
+                 cancelar: function () {
+                  
+                 },
+              
+             }
+         });
+     }
+
+
+    </script>
+
+}

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ENTIDAD.trabajoCE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Trabajos que se realizan</h2>
+
+<p> 
+    <a class="btn btn-success" style="border-bottom:double" href="@Url.Action("Crear","Trabajos")"><i class="glyphicon glyphicon-plus"></i> Crear Nuevo</a>
+</p>
+<hr />
+<table class="display" id="tablaidTR" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                <label>Numero Identificador</label>           
+            </th>
+            <th>
+                <label>Trabajos</label>
+            </th>
+            <th>
+                <label>Categoria o servicio</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+         @foreach (var item in Model)
+         {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_TRABAJO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TRABAJOS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CATEGORIA)
+                </td>
+                <td>
+                    <a class="btn btn-primary btn-xs" title="Editar" style="border-bottom:double" href="@Url.Action("editar","Trabajos",new {id=item.ID_CATEGORIA})">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </a>
+                    <a class="btn btn-info btn-xs" title="Detalle" style="border-bottom:double" href="@Url.Action("detalletrabajo","Trabajos",new {id=item.ID_TRABAJO})">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                    </a>
+                    <a class="btn btn-danger btn-xs" onclick="eliminaTR(@item.ID_TRABAJO)" style="border-bottom:double" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+         }
+    </tbody>
+
+</table>
+
+@section scripts{
+
+    <script>
+        $('#tablaidTR').DataTable();
+
+
+        function eliminaTR(idtraba) {
+         $.confirm({
+             title: 'Eliminar!',
+             content: '¿ESTAS SEGURO DE ELIMINAR ESTE TRABAJO?',
+             buttons: {
+                 confirmar: function () {
+                     LoadingOverlayShow("#tablaidTR");//PARA LLAMAR LA FUNCION LOADING
+                     $.ajax({
+                         url: "/Trabajos/elimina",
+                         type: "post",
+                         data: { id: idtraba }
+                     }).done(function (response) {
+                         console.log(response);
+                         LoadingOverlayHide("#tablaidTR");
+
+                         if (response.ok) {
+                             alert("Trabajo Eliminado");
+                             window.location = response.toRedirect;
+                         }
+                         else {
+                             alert(response.msg);
+                         }
+
+
+                     }).fail(function (jqxHR, textStatus, errorThrowm) {
+                         LoadingOverlayHide("#tablaidTR")
+                         alert(textStatus);
+                     });
+
+                 },
+                 cancelar: function () {
+                     
+                 },
+               
+             }
+         });
+     }
+
+
+    </script>
+
+}

@@ -1,0 +1,83 @@
+﻿@model ENTIDAD.CARGO
+
+@{
+    ViewBag.Title = "Crear Cargo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear Cargo</h2>
+
+<form action="@Url.Action("Crear","Cargo")" method="post" id="frmcargo">
+ 
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_CARGO)
+        <div class="form-group">
+            <h4>CARGO</h4>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">CARGO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="CARGO1" name="CARGO1" placeholder="NOMBRE DEL CARGO" />
+                @Html.ValidationMessageFor(model => model.CARGO1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success">
+            </div>
+        </div>
+    </div>
+   
+</form>
+<div>
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Cargo")"><i class="glyphicon glyphicon-floppy-remove"></i> Cancelar</a>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>//PARA CREAR UN CARGO CON JSON Y AJAX
+        $("#frmcargo").submit(function (event) {
+            event.preventDefault();
+
+            var post_url = $(this).attr("action");
+            var request_method = $(this).attr("method");
+            var form_data = $(this).serializeArray();
+            console.log(form_data);
+
+            LoadingOverlayShow("#frmcargo");
+
+            $.ajax({//AQUI EMPIEZA A CREAR
+                url: post_url,
+                type: request_method,
+                data: form_data
+            }).done(function (response) {
+                console.log(response);
+
+                LoadingOverlayHide("#frmcargo");
+
+                if (response.ok)
+                {
+                    alert("Cargo creado con Exito");
+                    window.location = response.toRedirect;
+                }
+                else
+                {
+                    alert(response.msg);
+                }
+               
+                
+            }).fail(function (jqxHR, textStatus, errorThrowm) {
+                LoadingOverlayHide("#frmcargo")
+            });
+        });
+    </script>
+
+}

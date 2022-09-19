@@ -1,0 +1,86 @@
+﻿@model ENTIDAD.MATERIALES
+
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear Material / Herramienta</h2>
+
+
+
+<form action="@Url.Action("Crear","Material")" method="post" id="frmmater">
+
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_MATERIAL)
+        <div class="form-group">
+            <h4>MATERIALES</h4>
+          
+        </div>
+
+        <div class="form-group">    
+            <label class="control-label col-md-2">Material / Herramienta</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="METERIAL" name="METERIAL" placeholder="NOMBRE MATERIAL/HERRAMIENTA" />
+                @Html.ValidationMessageFor(model => model.METERIAL, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Crear" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div>
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Material")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script>
+
+            $("#frmmater").submit(function (event) {
+                event.preventDefault();
+
+                var post_url = $(this).attr("action");
+                var request_method = $(this).attr("method");
+                var form_data = $(this).serializeArray();
+                console.log(form_data);
+
+                LoadingOverlayShow("#frmmater");
+
+                $.ajax({//AQUI EMPIEZA A CREAR
+                    url: post_url,
+                    type: request_method,
+                    data: form_data
+                }).done(function (response) {
+                    console.log(response);
+
+                    LoadingOverlayHide("#frmmater");
+
+                    if (response.ok) {
+                        alert("Material/Herramienta Creado con Exito");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+
+
+                }).fail(function (jqxHR, textStatus, errorThrowm) {
+                    LoadingOverlayHide("#frmmater")
+                });
+            });
+
+        </script>
+
+    }

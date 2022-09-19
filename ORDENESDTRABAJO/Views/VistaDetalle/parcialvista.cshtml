@@ -1,0 +1,30 @@
+﻿@model List<ENTIDAD.DETALLEORDEN>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ORDEN ID</th>
+            <th>TRABAJOS</th>
+            <th>MATERIALES</th>
+            <th>CANTIDAD</th>
+            <th>OBSERVACION</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID_ORDEN</td>
+                <td>@item.TRABAJOSREALIZADOS.TRABAJOS</td>
+                <td>@item.MATERIALES.METERIAL</td>
+                <td>@item.CANTIDAD</td>
+                <td>@item.OBSERVACION</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ENTIDAD.AspNetUsers>
+
+@{
+    ViewBag.Title = "listaU";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>lista de Usuarios</h2>
+
+<hr />
+<table class="display" id="tablaidU" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                <label>Email</label>
+            </th>
+            <th>
+                <label>Contraseña HASHEADA</label>
+            </th>
+            <th>
+                <label>Usuario</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+   
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PasswordHash)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<div class="form-group">
+    <div class="col-md-12">
+        <a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("Register","Account")"><i class="glyphicon glyphicon-arrow-left"></i> Regresar</a>
+    </div>
+</div>
+
+@section scripts {
+
+    <script>
+        $('#tablaidU').DataTable();
+    </script>
+    }

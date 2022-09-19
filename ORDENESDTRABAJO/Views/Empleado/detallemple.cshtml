@@ -1,0 +1,65 @@
+﻿@model ENTIDAD.empleadoCE
+
+@{
+    ViewBag.Title = "detallemple";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de los empleados</h2>
+
+<div>   
+    <hr />
+    <h4>EMPLEADO</h4>
+    <dl class="dl-horizontal">
+        <dt>      
+            <label>Numero Identificador</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_EMPLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DNI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DNI)
+        </dd>
+        <dt>
+            <label>Nombre</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NON)
+        </dd>
+        <dt>
+            <label>Apellido</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO)
+        </dd>
+
+        <dt>
+            <label>Cargo</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CARGO)
+        </dd>
+
+        <dt>
+            <label>Departamento</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEPARTAMENTO)
+        </dd>
+
+    </dl>
+</div>
+<p> 
+<a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("editar","Empleado",new {id = Model.ID_EMPLE})"><i class="glyphicon glyphicon-edit"></i> Editar</a> 
+<a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Empleado")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+</p>

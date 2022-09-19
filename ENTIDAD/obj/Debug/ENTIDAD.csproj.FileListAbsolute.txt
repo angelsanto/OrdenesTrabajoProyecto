@@ -1,0 +1,40 @@
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\ENTIDAD.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\ENTIDAD.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\obj\Debug\ENTIDAD.csprojResolveAssemblyReference.cache
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\obj\Debug\ENTIDAD.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\obj\Debug\ENTIDAD.pdb
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\DATOS.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\DATOS.pdb
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ENTIDAD\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\obj\Debug\ENTIDAD.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\obj\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ENTIDAD\obj\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ENTIDAD\obj\Debug\ENTIDAD.pdb

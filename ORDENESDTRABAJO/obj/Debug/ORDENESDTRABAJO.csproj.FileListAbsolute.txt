@@ -1,0 +1,492 @@
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ApplicationInsights.config
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\csc.exe
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\System.Collections.Immutable.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\vbc.exe
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe.config
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll.config
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Antlr3.Runtime.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ENTIDAD.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\EntityFramework.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.Web.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Web.Infrastructure.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\NEGOCIO.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Newtonsoft.Json.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Owin.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Helpers.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Mvc.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Optimization.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Razor.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\WebGrease.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\ENTIDAD.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\NEGOCIO.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.Web.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Helpers.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Mvc.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Optimization.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.Razor.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Antlr3.Runtime.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Newtonsoft.Json.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\EntityFramework.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.Helpers.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.Mvc.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.Optimization.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.Razor.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.WebPages.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\EntityFramework.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.csprojResolveAssemblyReference.cache
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\DATOS.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\DATOS.pdb
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.Shared.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Angel\Documents\Visual Studio 2015\Projects\ORDENESDTRABAJO\ORDENESDTRABAJO\bin\stdole.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ApplicationInsights.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\csc.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\vbc.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Antlr3.Runtime.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.Shared.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Newtonsoft.Json.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Helpers.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Mvc.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Optimization.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Razor.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\WebGrease.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\stdole.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Helpers.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Mvc.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Optimization.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.Razor.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Antlr3.Runtime.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Newtonsoft.Json.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.Razor.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ApplicationInsights.config
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\csc.exe
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\vbc.exe
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll.config
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Antlr3.Runtime.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.Shared.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ENTIDAD.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\NEGOCIO.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Newtonsoft.Json.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Owin.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Helpers.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Mvc.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Optimization.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Razor.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\WebGrease.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\DATOS.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\stdole.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ENTIDAD.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\NEGOCIO.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Helpers.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Mvc.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Optimization.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Razor.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Antlr3.Runtime.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Newtonsoft.Json.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\DATOS.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Razor.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ApplicationInsights.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\csc.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\vbc.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ORDENESDTRABAJO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Antlr3.Runtime.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.Shared.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Newtonsoft.Json.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Owin.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Helpers.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Mvc.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Optimization.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Razor.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\WebGrease.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\stdole.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.Web.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Helpers.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Mvc.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Optimization.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.Razor.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\System.Web.WebPages.Razor.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Antlr3.Runtime.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Newtonsoft.Json.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.Razor.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\ORDENESDTRABAJO\obj\Debug\ORDENESDTRABAJO.pdb

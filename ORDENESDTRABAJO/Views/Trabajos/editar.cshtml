@@ -1,0 +1,131 @@
+﻿@model ENTIDAD.trabajoCE
+
+@{
+    ViewBag.Title = "editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>editar</h2>
+
+<form action="@Url.Action("editar","Trabajos")" method="post" id="frmtrabajo">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_TRABAJO)
+        <div class="form-group">
+            <h4>TRABAJOSREALIZADOS</h4>
+          
+        </div>
+
+        <div class="form-group">          
+            <label class="control-label col-md-2">TRABAJOS</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="TRABAJOS" name="TRABAJOS" value="@Model.TRABAJOS" />
+                @Html.ValidationMessageFor(model => model.TRABAJOS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">CATERORIA O SERVICIO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_CATEGORIA" name="ID_CATEGORIA">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_CATEGORIA, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+   
+    </form>
+
+    <div>
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Trabajos")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script>
+
+            getDataC(function (result) {
+                $("#ID_CATEGORIA").val(@Model.ID_CATEGORIA);//PARA QUE TRAIGA EL ID DE LA CATERGORIA A EDITAR
+            });
+
+
+                function getDataC(myCallback) {//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX
+                $.ajax({
+                    Type: "GET",
+                    url: '/Tiposervi/getcategoria',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_CATEGORIA").append('<option value=' + item.ID_CATEGORIA + '>' + item.CATEGORIA + '</option>');
+                        });
+
+                        return myCallback()
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+                }
+
+                $("#frmtrabajo").submit(function (event) {
+                    event.preventDefault();
+
+                    var tr = $("#TRABAJOS").val();
+                    var cbc = $("#ID_CATEGORIA").val();
+
+                    if (tr == "") {
+                        alert("Debe de ingresar el trabajo o identidad");
+                        return;
+                    }
+
+                    if (cbc == "") {
+                        alert("Debe de seleccionar la categoria o identidad");
+                        return;
+                    }
+
+                    var post_url = $(this).attr("action");
+                    var request_method = $(this).attr("method");
+                    var form_data = $(this).serializeArray();
+                    console.log(form_data);
+
+                    LoadingOverlayShow("#frmtrabajo");
+
+                    $.ajax({//AQUI EMPIEZA A CREAR
+                        url: post_url,
+                        type: request_method,
+                        data: form_data
+                    }).done(function (response) {
+                        console.log(response);
+
+                        LoadingOverlayHide("#frmtrabajo");
+
+                        if (response.ok) {
+                            alert("Trabajo editado con Exito");
+                            window.location = response.toRedirect;
+                        }
+                        else {
+                            alert(response.msg);
+                        }
+
+
+                    }).fail(function (jqxHR, textStatus, errorThrowm) {
+                        LoadingOverlayHide("#frmtrabajo")
+                    });
+                });
+
+
+        </script>
+    }

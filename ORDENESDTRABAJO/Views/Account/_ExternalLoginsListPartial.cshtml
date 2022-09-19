@@ -1,0 +1,23 @@
+﻿@model ORDENESDTRABAJO.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+<hr />
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+    if (loginProviders.Count() == 0) {
+        <div>
+                <img src="~/Content/perfil-del-usuario.png" width="450" height="400">        
+        </div>
+    }
+    else {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
+            @Html.AntiForgeryToken()
+            <div id="socialLoginList">
+                @*<p>
+                    @foreach (AuthenticationDescription p in loginProviders) {
+                        <button type="submit" class="btn btn-default" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Inicie sesión con su cuenta @p.Caption">@p.AuthenticationType</button>
+                    }
+                </p>*@
+            </div>
+        }
+    }
+}

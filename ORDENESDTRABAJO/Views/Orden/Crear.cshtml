@@ -1,0 +1,221 @@
+﻿@model ENTIDAD.ORDENTRABAJO
+
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear</h2>
+
+<form action="@Url.Action("Crear","Orden")" method="post" id="frmorden">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_ORDEN)
+        <div class="form-group">
+            <h4>ORDEN DE TRABAJO</h4>
+           
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">FECHA DE INICIO DE LA ORDEN</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input type="datetime-local" class="form-control" id="FECHAINICIO" name="FECHAINICIO" @*value="2022-06-01T08.00"*@ />
+                @Html.ValidationMessageFor(model => model.FECHAINICIO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">FECHA FINAL DE LA ORDEN</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input type="datetime-local" class="form-control" id="FECHAFINAL" name="FECHAFINAL" @*value="2022-06-01T08.00"*@ />
+                @Html.ValidationMessageFor(model => model.FECHAFINAL, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">EMPLEADO MANTENIMIENTO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_EMPLE" name="ID_EMPLE">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_EMPLE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">TIPO MENTENIMIENTO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_MANTENI" name="ID_MANTENI">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_MANTENI, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">SOLICITUD ORDEN</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+                <select class="form-control" id="ID_SOLIORDEN" name="ID_SOLIORDEN">
+                    <option value="">SELECIONE....</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.ID_SOLIORDEN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div>
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Orden")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script>
+
+            getemple();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE EMPLEADO
+            function getemple() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Empleado/getemple',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_EMPLE").append('<option value=' + item.ID_EMPLE + '>' + item.nombreCompleto + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            getsoli();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE SOLICITUD
+            function getsoli() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Solicitud/getsoli',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_SOLIORDEN").append('<option value=' + item.ID_SOLIORDEN + '>' + item.DESCRIPCION + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            getmante();//FUNCION PARA LLAMAR A LLENAR EL CONBOBOX DE MANTENIMINTO
+            function getmante() {
+                $.ajax({
+                    Type: "GET",
+                    url: '/Mante/getmante',
+                    dataType: "json",
+                    success: function (result) {
+                        $.each(result.data, function (key, item) {
+                            $("#ID_MANTENI").append('<option value=' + item.ID_MANTENI + '>' + item.MANTENIMIENTO1 + '</option>');
+                        });
+                    },
+                    erro: function (data) {
+                        alert("error");
+                    }
+                });
+            }
+
+            $("#frmorden").submit(function (event) {
+                event.preventDefault();
+
+                var fci = $("#FECHAINICIO").val();
+                var fcf = $("#FECHAFINAL").val();
+                var cbe = $("#ID_EMPLE").val();
+                var cbm = $("#ID_MANTENI").val();
+                var cbs = $("#ID_SOLIORDEN").val();
+
+                if (fci == "" || fcf=="") {
+                    alert("Debe de ingresar la fecha inicial y/o la fecha final");
+                    return;
+                }
+
+
+                if (cbe == "") {
+                    alert("Debe de seleccionar el empleado");
+                    return;
+                }
+
+                if (cbm == "") {
+                    alert("Debe de seleccionar el tipo mantenimiento");
+                    return;
+                }
+
+                if (cbs == "") {
+                    alert("Debe de seleccionar la solicitud");
+                    return;
+                }
+
+                if (validarfecha(fci, fcf)==false)
+                {
+                    alert("La fecha final no puede ser menor que la fecha inicial")
+                    return;
+                }
+
+
+                var post_url = $(this).attr("action");
+                var request_method = $(this).attr("method");
+                var form_data = $(this).serializeArray();
+                console.log(form_data);
+
+                LoadingOverlayShow("#frmorden");
+
+                $.ajax({//AQUI EMPIEZA A CREAR
+                    url: post_url,
+                    type: request_method,
+                    data: form_data
+                }).done(function (response) {
+                    console.log(response);
+
+                    LoadingOverlayHide("#frmorden");
+
+                    if (response.ok) {
+                        alert("Orden creado con Exito");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+
+
+                }).fail(function (jqxHR, textStatus, errorThrowm) {
+                    LoadingOverlayHide("#frmorden")
+                });
+            });
+
+
+            function validarfecha(dateini, datefin) {
+                var _dateini = new Date(dateini);
+                var _datefin = new Date(datefin);
+
+                if (_dateini > _datefin)
+
+                    return false;         
+                    
+                else
+                    return true;
+            }
+
+        </script>
+    }

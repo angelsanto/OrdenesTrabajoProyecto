@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BSORDENTRABAJOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CARGO">
+    <Key>
+      <PropertyRef Name="ID_CARGO" />
+    </Key>
+    <Property Name="ID_CARGO" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CARGO" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTO">
+    <Key>
+      <PropertyRef Name="ID_DEPARTA" />
+    </Key>
+    <Property Name="ID_DEPARTA" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DEPARTAMENTO" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLEORDEN">
+    <Key>
+      <PropertyRef Name="ID_DETALLE" />
+    </Key>
+    <Property Name="ID_DETALLE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ORDEN" Type="int" Nullable="false" />
+    <Property Name="ID_TRABAJO" Type="int" Nullable="false" />
+    <Property Name="ID_MATERIAL" Type="int" />
+    <Property Name="CANTIDAD" Type="int" />
+    <Property Name="OBSERVACION" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="ID_EMPLE" />
+    </Key>
+    <Property Name="ID_EMPLE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DNI" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="NON" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="APELLIDO" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="ID_CARGO" Type="tinyint" />
+    <Property Name="ID_DEPARTA" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="MANTENIMIENTO">
+    <Key>
+      <PropertyRef Name="ID_MANTENI" />
+    </Key>
+    <Property Name="ID_MANTENI" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MANTENIMIENTO" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="MATERIALES">
+    <Key>
+      <PropertyRef Name="ID_MATERIAL" />
+    </Key>
+    <Property Name="ID_MATERIAL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="METERIAL" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ORDENTRABAJO">
+    <Key>
+      <PropertyRef Name="ID_ORDEN" />
+    </Key>
+    <Property Name="ID_ORDEN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FECHAINICIO" Type="datetime" />
+    <Property Name="FECHAFINAL" Type="datetime" />
+    <Property Name="ID_EMPLE" Type="int" />
+    <Property Name="ID_MANTENI" Type="tinyint" />
+    <Property Name="ID_SOLIORDEN" Type="int" />
+  </EntityType>
+  <EntityType Name="SOLIORDEN">
+    <Key>
+      <PropertyRef Name="ID_SOLIORDEN" />
+    </Key>
+    <Property Name="ID_SOLIORDEN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="nvarchar(max)" />
+    <Property Name="FECHASOLI" Type="datetime" />
+    <Property Name="ID_EMPLE" Type="int" />
+    <Property Name="ID_CATEGORIA" Type="tinyint" />
+    <Property Name="ID_DEPARTA" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="TIPOSERVICIO">
+    <Key>
+      <PropertyRef Name="ID_CATEGORIA" />
+    </Key>
+    <Property Name="ID_CATEGORIA" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CATEGORIA" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRABAJOSREALIZADOS">
+    <Key>
+      <PropertyRef Name="ID_TRABAJO" />
+    </Key>
+    <Property Name="ID_TRABAJO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRABAJOS" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ID_CATEGORIA" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="ID_USU" />
+    </Key>
+    <Property Name="ID_USU" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="nvarchar" MaxLength="20" />
+    <Property Name="NON_USU" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__EMPLEADO__ID_CAR__44CA3770">
+    <End Role="CARGO" Type="Self.CARGO" Multiplicity="0..1" />
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID_CARGO" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="ID_CARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLEADO__ID_DEP__45BE5BA9">
+    <End Role="DEPARTAMENTO" Type="Self.DEPARTAMENTO" Multiplicity="0..1" />
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="ID_DEPARTA" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="ID_DEPARTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ORDENTRAB__ID_EM__477199F1">
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="0..1" />
+    <End Role="ORDENTRABAJO" Type="Self.ORDENTRABAJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="ID_EMPLE" />
+      </Principal>
+      <Dependent Role="ORDENTRABAJO">
+        <PropertyRef Name="ID_EMPLE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ORDENTRAB__ID_MA__4959E263">
+    <End Role="MANTENIMIENTO" Type="Self.MANTENIMIENTO" Multiplicity="0..1" />
+    <End Role="ORDENTRABAJO" Type="Self.ORDENTRABAJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MANTENIMIENTO">
+        <PropertyRef Name="ID_MANTENI" />
+      </Principal>
+      <Dependent Role="ORDENTRABAJO">
+        <PropertyRef Name="ID_MANTENI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ORDENTRAB__ID_SO__4865BE2A">
+    <End Role="SOLIORDEN" Type="Self.SOLIORDEN" Multiplicity="0..1" />
+    <End Role="ORDENTRABAJO" Type="Self.ORDENTRABAJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SOLIORDEN">
+        <PropertyRef Name="ID_SOLIORDEN" />
+      </Principal>
+      <Dependent Role="ORDENTRABAJO">
+        <PropertyRef Name="ID_SOLIORDEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SOLIORDEN__ID_CA__4C6B5938">
+    <End Role="TIPOSERVICIO" Type="Self.TIPOSERVICIO" Multiplicity="0..1" />
+    <End Role="SOLIORDEN" Type="Self.SOLIORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOSERVICIO">
+        <PropertyRef Name="ID_CATEGORIA" />
+      </Principal>
+      <Dependent Role="SOLIORDEN">
+        <PropertyRef Name="ID_CATEGORIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SOLIORDEN__ID_DE__73852659">
+    <End Role="DEPARTAMENTO" Type="Self.DEPARTAMENTO" Multiplicity="0..1" />
+    <End Role="SOLIORDEN" Type="Self.SOLIORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="ID_DEPARTA" />
+      </Principal>
+      <Dependent Role="SOLIORDEN">
+        <PropertyRef Name="ID_DEPARTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SOLIORDEN__ID_EM__4B7734FF">
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="0..1" />
+    <End Role="SOLIORDEN" Type="Self.SOLIORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="ID_EMPLE" />
+      </Principal>
+      <Dependent Role="SOLIORDEN">
+        <PropertyRef Name="ID_EMPLE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRABAJOSR__ID_CA__1B9317B3">
+    <End Role="TIPOSERVICIO" Type="Self.TIPOSERVICIO" Multiplicity="0..1" />
+    <End Role="TRABAJOSREALIZADOS" Type="Self.TRABAJOSREALIZADOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOSERVICIO">
+        <PropertyRef Name="ID_CATEGORIA" />
+      </Principal>
+      <Dependent Role="TRABAJOSREALIZADOS">
+        <PropertyRef Name="ID_CATEGORIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLEORDEN_MATERIALES">
+    <End Role="MATERIALES" Type="Self.MATERIALES" Multiplicity="0..1" />
+    <End Role="DETALLEORDEN" Type="Self.DETALLEORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MATERIALES">
+        <PropertyRef Name="ID_MATERIAL" />
+      </Principal>
+      <Dependent Role="DETALLEORDEN">
+        <PropertyRef Name="ID_MATERIAL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLEORDEN_ORDENTRABAJO">
+    <End Role="ORDENTRABAJO" Type="Self.ORDENTRABAJO" Multiplicity="1" />
+    <End Role="DETALLEORDEN" Type="Self.DETALLEORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDENTRABAJO">
+        <PropertyRef Name="ID_ORDEN" />
+      </Principal>
+      <Dependent Role="DETALLEORDEN">
+        <PropertyRef Name="ID_ORDEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLEORDEN_TRABAJOSREALIZADOS">
+    <End Role="TRABAJOSREALIZADOS" Type="Self.TRABAJOSREALIZADOS" Multiplicity="1" />
+    <End Role="DETALLEORDEN" Type="Self.DETALLEORDEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRABAJOSREALIZADOS">
+        <PropertyRef Name="ID_TRABAJO" />
+      </Principal>
+      <Dependent Role="DETALLEORDEN">
+        <PropertyRef Name="ID_TRABAJO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BSORDENTRABAJOModelStoreContainer">
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CARGO" EntityType="Self.CARGO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEPARTAMENTO" EntityType="Self.DEPARTAMENTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLEORDEN" EntityType="Self.DETALLEORDEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MANTENIMIENTO" EntityType="Self.MANTENIMIENTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MATERIALES" EntityType="Self.MATERIALES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ORDENTRABAJO" EntityType="Self.ORDENTRABAJO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SOLIORDEN" EntityType="Self.SOLIORDEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIPOSERVICIO" EntityType="Self.TIPOSERVICIO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRABAJOSREALIZADOS" EntityType="Self.TRABAJOSREALIZADOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__EMPLEADO__ID_CAR__44CA3770" Association="Self.FK__EMPLEADO__ID_CAR__44CA3770">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLEADO__ID_DEP__45BE5BA9" Association="Self.FK__EMPLEADO__ID_DEP__45BE5BA9">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ORDENTRAB__ID_EM__477199F1" Association="Self.FK__ORDENTRAB__ID_EM__477199F1">
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+      <End Role="ORDENTRABAJO" EntitySet="ORDENTRABAJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ORDENTRAB__ID_MA__4959E263" Association="Self.FK__ORDENTRAB__ID_MA__4959E263">
+      <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+      <End Role="ORDENTRABAJO" EntitySet="ORDENTRABAJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ORDENTRAB__ID_SO__4865BE2A" Association="Self.FK__ORDENTRAB__ID_SO__4865BE2A">
+      <End Role="SOLIORDEN" EntitySet="SOLIORDEN" />
+      <End Role="ORDENTRABAJO" EntitySet="ORDENTRABAJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SOLIORDEN__ID_CA__4C6B5938" Association="Self.FK__SOLIORDEN__ID_CA__4C6B5938">
+      <End Role="TIPOSERVICIO" EntitySet="TIPOSERVICIO" />
+      <End Role="SOLIORDEN" EntitySet="SOLIORDEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SOLIORDEN__ID_DE__73852659" Association="Self.FK__SOLIORDEN__ID_DE__73852659">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="SOLIORDEN" EntitySet="SOLIORDEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SOLIORDEN__ID_EM__4B7734FF" Association="Self.FK__SOLIORDEN__ID_EM__4B7734FF">
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+      <End Role="SOLIORDEN" EntitySet="SOLIORDEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRABAJOSR__ID_CA__1B9317B3" Association="Self.FK__TRABAJOSR__ID_CA__1B9317B3">
+      <End Role="TIPOSERVICIO" EntitySet="TIPOSERVICIO" />
+      <End Role="TRABAJOSREALIZADOS" EntitySet="TRABAJOSREALIZADOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLEORDEN_MATERIALES" Association="Self.FK_DETALLEORDEN_MATERIALES">
+      <End Role="MATERIALES" EntitySet="MATERIALES" />
+      <End Role="DETALLEORDEN" EntitySet="DETALLEORDEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLEORDEN_ORDENTRABAJO" Association="Self.FK_DETALLEORDEN_ORDENTRABAJO">
+      <End Role="ORDENTRABAJO" EntitySet="ORDENTRABAJO" />
+      <End Role="DETALLEORDEN" EntitySet="DETALLEORDEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLEORDEN_TRABAJOSREALIZADOS" Association="Self.FK_DETALLEORDEN_TRABAJOSREALIZADOS">
+      <End Role="TRABAJOSREALIZADOS" EntitySet="TRABAJOSREALIZADOS" />
+      <End Role="DETALLEORDEN" EntitySet="DETALLEORDEN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

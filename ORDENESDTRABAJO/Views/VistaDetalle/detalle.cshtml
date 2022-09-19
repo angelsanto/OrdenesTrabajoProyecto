@@ -1,0 +1,91 @@
+﻿@model List<ENTIDAD.detalleCE>
+@{
+    ViewBag.Title = "detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>LISTA DE LOS DETALLES DE LAS ORDENES</h2>
+
+<hr />
+<table class="display" id="tablaiDE" style="width:100%">
+    <thead>
+        <tr>   
+            <th>ORDEN ID</th>
+            <th>TRABAJOS</th>
+            <th>MATERIALES</th>
+            <th>CANTIDAD</th>
+            <th>OBSERVACION</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>  
+                <td>@item.ID_ORDEN</td>
+                <td>@item.TRABAJOS</td>
+                <td>@item.METERIAL</td>
+                <td>@item.CANTIDAD</td>
+                <td>@item.OBSERVACION</td>
+                <td>
+                    <a class="btn btn-danger btn-xs" onclick="eliminaDT(@item.ID_DETALLE)" style="border-bottom:double" title="Eliminar">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<div>
+    <a class="btn btn-info" style="border-bottom:double" href="@Url.Action("agregartrabajos","VistaDetalle")"><i class="glyphicon glyphicon-arrow-left"></i> Agregar detalle</a>
+</div>
+
+@section scripts{
+
+    <script>
+        $('#tablaiDE').DataTable();
+
+
+        function eliminaDT(idtrabaD) {
+            $.confirm({
+                title: 'Eliminar!',
+                content: '¿ESTAS SEGURO DE ELIMINAR ESTE TRABAJO DEL DETALLE?',
+                buttons: {
+                    confirmar: function () {
+                        LoadingOverlayShow("#tablaiDE");//PARA LLAMAR LA FUNCION LOADING
+                        $.ajax({
+                            url: "/VistaDetalle/elimina",
+                            type: "post",
+                            data: { id: idtrabaD }
+                        }).done(function (response) {
+                            console.log(response);
+                            LoadingOverlayHide("#tablaiDE");
+
+                            if (response.ok) {
+                                alert("Trabajo Eliminado");
+                                window.location = response.toRedirect;
+                            }
+                            else {
+                                alert(response.msg);
+                            }
+
+
+                        }).fail(function (jqxHR, textStatus, errorThrowm) {
+                            LoadingOverlayHide("#tablaiDE")
+                            alert(textStatus);
+                        });
+
+                    },
+                    cancelar: function () {
+                       
+                    },
+                    
+                }
+            });
+        }
+
+        </script>
+    }

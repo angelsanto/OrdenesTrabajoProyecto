@@ -1,0 +1,56 @@
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\DATOS.dll.config
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\DATOS.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\DATOS.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\ENTIDAD.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\EntityFramework.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\ENTIDAD.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\EntityFramework.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\es\EntityFramework.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\obj\Debug\DATOS.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\DATOS\obj\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\DATOS.dll.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\obj\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\DATOS\obj\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.dll.config
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.dll.config
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\DATOS\obj\Debug\DATOS.pdb

@@ -1,0 +1,49 @@
+﻿@model ENTIDAD.TRABAJOSREALIZADOS
+
+@{
+    ViewBag.Title = "elimina";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>elimina</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TRABAJOSREALIZADOS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_TRABAJO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_TRABAJO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRABAJOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRABAJOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_CATEGORIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_CATEGORIA)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,55 @@
+﻿@model ENTIDAD.ordenCE
+
+@{
+    ViewBag.Title = "detalleorden";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalle de la orden</h2>
+
+<div>
+    <hr />
+    <h4>ORDEN DE TRABAJO</h4>
+    <dl class="dl-horizontal">
+        <dt> 
+             <label>Numero Identificador</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ID_ORDEN)
+        </dd>
+        <dt>
+            <label>Fecha de inicio de la orden</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FECHAINICIO)
+        </dd>
+        <dt>
+            <label>Fecha final de la orden</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FECHAFINAL)
+        </dd>
+        <dt>
+            <label>Empleado mantenimiento</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombreCompleto)
+        </dd>
+        <dt>
+            <label>Tipo Mantenimiento</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.mantenimiento)
+        </dd>
+        <dt>
+            <label>Solicitud de orden</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a class="btn btn-primary" style="border-bottom:double" href="@Url.Action("editar","Orden",new {id = Model.ID_ORDEN})"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+    <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Orden")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+</p>

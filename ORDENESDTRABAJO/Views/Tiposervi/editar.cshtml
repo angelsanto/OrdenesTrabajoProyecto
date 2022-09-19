@@ -1,0 +1,84 @@
+﻿@model ENTIDAD.TIPOSERVICIO
+
+@{
+    ViewBag.Title = "editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Editar categoria de servicio</h2>
+
+<form action="@Url.Action("editar","Tiposervi")" method="post" id="frmtipo">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">    
+        <hr/>
+        <h4>TIPOSERVICIO</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model=>model.ID_CATEGORIA)
+        <div class="form-group">
+         
+        </div>
+
+        <div class="form-group">       
+            <label class="control-label col-md-2">CATEGORIAS O SERVICIOS DE TRABAJO</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <input type="text" class="form-control" id="CATEGORIA" name="CATEGORIA" value="@Model.CATEGORIA" />
+                @Html.ValidationMessageFor(model => model.CATEGORIA, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+   
+    </form>
+
+    <div>    
+        <a class="btn btn-danger" style="border-bottom:double" href="@Url.Action("Index","Tiposervi")"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+
+  <script>
+
+   $("#frmtipo").submit(function (event) {
+                event.preventDefault();
+
+                var post_url = $(this).attr("action");
+                var request_method = $(this).attr("method");
+                var form_data = $(this).serializeArray();
+                console.log(form_data);
+
+                LoadingOverlayShow("#frmtipo");
+
+                $.ajax({//AQUI EMPIEZA A CREAR
+                    url: post_url,
+                    type: request_method,
+                    data: form_data
+                }).done(function (response) {
+                    console.log(response);
+
+                    LoadingOverlayHide("#frmtipo");
+
+                    if (response.ok) {
+                        alert("Servicio Editado con Exito");
+                        window.location = response.toRedirect;
+                    }
+                    else {
+                        alert(response.msg);
+                    }
+
+
+                }).fail(function (jqxHR, textStatus, errorThrowm) {
+                    LoadingOverlayHide("#frmtipo")
+                });
+            });
+
+  </script>
+    }

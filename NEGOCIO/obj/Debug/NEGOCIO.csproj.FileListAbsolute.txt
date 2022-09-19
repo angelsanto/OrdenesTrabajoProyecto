@@ -1,0 +1,48 @@
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\NEGOCIO.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\NEGOCIO.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\DATOS.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\ENTIDAD.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\EntityFramework.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\DATOS.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\ENTIDAD.pdb
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\EntityFramework.xml
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\bin\Debug\es\EntityFramework.resources.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\obj\Debug\NEGOCIO.dll
+c:\users\angel\documents\visual studio 2015\Projects\ORDENESDTRABAJO\NEGOCIO\obj\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\obj\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\obj\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL\NEGOCIO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\PRACTICA PROFECIONAL\proyecto--baseDATOSbakut\FINALPROYECTO\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\NEGOCIO.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\DATOS.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\ENTIDAD.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\DATOS.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\ENTIDAD.pdb
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.csprojResolveAssemblyReference.cache
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.dll
+C:\Users\Angel\Desktop\ORDENESDTRABAJO-ANGEL-FINAL\NEGOCIO\obj\Debug\NEGOCIO.pdb
